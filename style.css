@@ -281,5 +281,43 @@ footer a {
     text-decoration: none;
     color: var(--white);
 }
+/************************
+responsive
+*************************/
+@media(min-width:768px) and (max-width:1024px) {
+
+}
+@media(max-width: 768px) {
+    nav ul li a {
+        margin: 7px;
+    }
+    header h1 {
+        font-size: 3rem;
+    }
+    header {
+        padding: 50px;
+    }
+    .about article {
+        width: 100%;
+        padding: 40px;
+    }
+    .products .row1 article:nth-child(1),
+    .products .row2 article:nth-child(2),
+    .products .row3 article:nth-child(1) {
+        display: none;
+    }
+    .products .row1 article:nth-child(2),
+    .products .row2 article:nth-child(1),
+    .products .row3 article:nth-child(2){
+        width: 100%;
+    }
+    footer article:first-child {
+        width: 100%;
+    }
+    footer article:last-child {
+        width: 100%;
+        padding: 30px 0;
+    }
+}
 
 
